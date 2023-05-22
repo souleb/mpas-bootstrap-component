@@ -1,0 +1,18 @@
+components:
+- name:  github.com/souleb/mpas-bootstrap-component
+  version: "0.1.0"
+  provider:
+    name: souleb
+  resources:
+  - name: flux
+    type: ociImage
+    version: "v2.0.0-rc.3"
+    access:
+      type: ociArtifact
+      imageReference: ghcr.io/stefanprodan/manifests/flux-aio:v2.0.0-rc.3
+  - name: ocm-controller
+    type: ociImage
+    version: "v0.8.1"
+    access:
+      type: ociArtifact
+      imageReference: ghcr.io/open-component-model/ocm-controller:v0.8.1
